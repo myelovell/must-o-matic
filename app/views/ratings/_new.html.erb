@@ -1,0 +1,10 @@
+<%= form_for([@must, Rating.new]) do |form| %>
+    <%= form.label :comment, "Kommentar" %>
+    <br>
+    <%= form.text_area :comment, size: "20x5"%>
+    <br>
+    <%= form.label :comment, "Betyg" %>
+    <%= form.number_field :rating, in:(1..10), step: 1%>
+    <br>
+    <%= form.submit%>
+<% end %>

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @must.name %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @must.manufacturer %>
+</p>
+
+<p>
+  <strong>Volume:</strong>
+  <%= @must.volume %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @must.price %>
+</p>
+
+<%= link_to 'Edit', edit_must_path(@must) %> |
+<%= link_to 'Back', musts_path %>
+
+<% if current_user %>
+  <%= render 'ratings/new', must: @must%>
+<% end %>
+
+<br>
+<br>
+
+
+<h2>Ratings</h2>
+Average rating: <%= @must.average_rating.round%> / 10
+<%= render @must.ratings %>
+
+
+
+

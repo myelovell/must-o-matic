@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mustar</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Namn</th>
+      <th>Tillverkare</th>
+      <th>Volym (cl)</th>
+      <th>Pris</th>
+      <th>Pris per liter</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @musts.each do |must| %>
+      <tr>
+        <td><%= must.name %></td>
+        <td><%= must.manufacturer %></td>
+        <td><%= must.volume %></td>
+        <td><%= must.price %></td>
+        <td><%= must.price_per_liter.round(2) %></td>
+        <td><%= link_to 'Visa', must %></td>
+        <td><%= link_to 'Ändra', edit_must_path(must) %></td>
+        <td><%= link_to 'Vaska', must, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Must', new_must_path %>

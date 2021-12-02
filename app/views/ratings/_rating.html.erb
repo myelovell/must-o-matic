@@ -1,0 +1,8 @@
+<p>
+    <%= rating.rating %> -- 
+    <%= rating.comment %> -- 
+    <%= rating.created_at.to_s(:long) %>
+
+   
+    <%= link_to "DELETE", must_rating_path(@must, rating), method: :delete, data: { confirm: 'Are you sure?'}%>
+</p>
