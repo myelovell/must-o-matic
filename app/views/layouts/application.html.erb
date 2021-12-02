@@ -11,16 +11,23 @@
   </head>
 
   <body>
-    <% if current_user %>
-      <%= current_user.email %>
-       <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-    <% else %>
-      <span>
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-        or 
-        <%= link_to "login", new_user_session_path, :class => 'navbar-link'%>
-      </span>
-    <% end %>
+    <div class="header">
+      <% if current_user %>
+        <%= current_user.email %>
+        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <span>
+          <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+          or 
+          <%= link_to "login", new_user_session_path, :class => 'navbar-link'%>
+        </span>
+      <% end %>
+      <h1>Mustar</h1>
+    </div>
+      
     <%= yield %>
+      
+    
+    
   </body>
 </html>
