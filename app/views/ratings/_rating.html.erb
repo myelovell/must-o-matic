@@ -2,7 +2,9 @@
     <%= rating.rating %> -- 
     <%= rating.comment %> -- 
     <%= rating.created_at.to_s(:long) %>
+    <%= rating.user.email %>
 
-   
+    <% if rating.user == current_user%>
     <%= link_to "DELETE", must_rating_path(@must, rating), method: :delete, data: { confirm: 'Are you sure?'}%>
+    <%end %>
 </p>

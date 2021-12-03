@@ -32,7 +32,12 @@
 
 
 <h2>Ratings</h2>
-Average rating: <%= @must.average_rating.round%> / 10
+Average rating: <%if @must.average_rating != nil %> 
+<%= @must.average_rating.round%> / 10
+<%else%>
+0 / 10
+<%end%>
+
 <%= render @must.ratings %>
 
 

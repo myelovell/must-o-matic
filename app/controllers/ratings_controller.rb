@@ -4,6 +4,7 @@ class RatingsController < ApplicationController
     
     def create
         rating = Rating.new(ratings_params)
+        rating.user = current_user
         rating.must = @must
         
         if rating.save
