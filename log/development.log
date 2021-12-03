@@ -9647,3 +9647,935 @@ Processing by MustsController#index as HTML
 Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms | Allocations: 6544)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-03 15:02:49 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 5697)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 13024)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.3ms | Allocations: 17978)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-03 15:04:01 +0100
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.4ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5006)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms | Allocations: 5593)
+
+
+Started GET "/" for 192.168.4.135 at 2021-12-03 15:06:31 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 5699)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 13065)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 17894)
+
+
+Started GET "/" for 192.168.4.152 at 2021-12-03 15:07:09 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1202)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5028)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 5545)
+
+
+Started GET "/" for 192.168.4.31 at 2021-12-03 15:07:12 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1067)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4749)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.2ms | Allocations: 5171)
+
+
+Started GET "/musts/1" for 192.168.4.31 at 2021-12-03 15:07:13 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [4 times] (Duration: 9.6ms | Allocations: 8703)
+  Rendered musts/show.html.erb within layouts/application (Duration: 25.6ms | Allocations: 20440)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 24120)
+Completed 200 OK in 45ms (Views: 29.0ms | ActiveRecord: 1.2ms | Allocations: 28374)
+
+
+Started GET "/musts/new" for 192.168.4.152 at 2021-12-03 15:07:16 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 15.1ms | Allocations: 4734)
+  Rendered musts/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 5115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 8934)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 9654)
+
+
+Started GET "/users/sign_in" for 192.168.4.31 at 2021-12-03 15:07:19 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 683)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 3564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 7432)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 9873)
+
+
+Started GET "/users/sign_up" for 192.168.4.152 at 2021-12-03 15:07:21 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 237)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2117)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 5979)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 7620)
+
+
+Started POST "/users/sign_in" for 192.168.4.31 at 2021-12-03 15:07:27 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@f", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "t@f"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 279ms (ActiveRecord: 0.3ms | Allocations: 2942)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@f", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 159)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 4890)
+Completed 200 OK in 245ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 5692)
+
+
+Started POST "/users/sign_in" for 192.168.4.31 at 2021-12-03 15:07:35 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"t@f", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "t@f"], ["LIMIT", 1]]
+Redirected to http://192.168.4.181:3000/
+Completed 302 Found in 279ms (ActiveRecord: 0.4ms | Allocations: 4119)
+
+
+Started GET "/" for 192.168.4.31 at 2021-12-03 15:07:35 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1180)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5821)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 6381)
+
+
+Started GET "/musts/1" for 192.168.4.31 at 2021-12-03 15:07:39 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 3.1ms | Allocations: 1079)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [4 times] (Duration: 6.5ms | Allocations: 3562)
+  Rendered musts/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 8373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 12080)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.5ms | Allocations: 13137)
+
+
+Started GET "/users/sign_up" for 192.168.4.135 at 2021-12-03 15:07:41 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 108)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4761)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 5469)
+
+
+Started POST "/users" for 192.168.4.152 at 2021-12-03 15:07:49 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eve@jue", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eve@jue"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 3.2ms | Allocations: 579)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 108)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5735)
+Completed 200 OK in 287ms (Views: 7.2ms | ActiveRecord: 0.2ms | Allocations: 11672)
+
+
+Started POST "/users" for 192.168.4.135 at 2021-12-03 15:08:04 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nikki.andersson@elev.ga.ntig.se", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nikki.andersson@elev.ga.ntig.se"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "nikki.andersson@elev.ga.ntig.se"], ["encrypted_password", "$2a$12$MBb/rZaHSg0mVbvNXXKNz.6U.I9VS5mnrTevimqCQS0xhNicVWi1K"], ["created_at", "2021-12-03 14:08:05.201283"], ["updated_at", "2021-12-03 14:08:05.201283"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.4.181:3000/
+Completed 302 Found in 281ms (ActiveRecord: 1.2ms | Allocations: 6028)
+
+
+Started GET "/" for 192.168.4.135 at 2021-12-03 15:08:05 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1071)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5511)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 5987)
+
+
+Started POST "/users" for 192.168.4.152 at 2021-12-03 15:08:06 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eve@jue", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eve@jue"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 555)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 108)
+  Rendered /Users/my.eklundlovell/.gem/ruby/3.0.2/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5710)
+Completed 200 OK in 283ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 10777)
+
+
+Started GET "/musts/new" for 192.168.4.135 at 2021-12-03 15:08:11 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 2.8ms | Allocations: 1036)
+  Rendered musts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 5561)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms | Allocations: 6036)
+
+
+Started POST "/users" for 192.168.4.152 at 2021-12-03 15:08:18 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eve@jue", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eve@jue"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "eve@jue"], ["encrypted_password", "$2a$12$zezn5823IA8kOG0pknwqO..zwcRLjhAIBibZRT5fqhB/P2UmO8Gua"], ["created_at", "2021-12-03 14:08:18.697625"], ["updated_at", "2021-12-03 14:08:18.697625"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://192.168.4.181:3000/
+Completed 302 Found in 279ms (ActiveRecord: 1.1ms | Allocations: 5686)
+
+
+Started GET "/" for 192.168.4.152 at 2021-12-03 15:08:18 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5472)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms | Allocations: 5948)
+
+
+Started GET "/musts/new" for 192.168.4.152 at 2021-12-03 15:08:22 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 8.4ms | Allocations: 1028)
+  Rendered musts/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 5561)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.1ms | Allocations: 6036)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-03 15:08:24 +0100
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 4723)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.3ms | Allocations: 5186)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-03 15:08:25 +0100
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 4993)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.2ms | Allocations: 5565)
+
+
+Started POST "/musts" for 192.168.4.135 at 2021-12-03 15:08:26 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"Julmust", "manufacturer"=>"Freeway", "volume"=>"150", "price"=>"10"}, "commit"=>"Create Must"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 4301)
+
+
+  
+NoMethodError (undefined method `numericality' for #<Must id: nil, name: "Julmust", manufacturer: "Freeway", volume: 150, price: 10.0, created_at: nil, updated_at: nil>):
+  
+app/controllers/musts_controller.rb:27:in `block in create'
+app/controllers/musts_controller.rb:26:in `create'
+Started POST "/musts" for 192.168.4.152 at 2021-12-03 15:08:34 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"evves", "manufacturer"=>"eve", "volume"=>"6", "price"=>"666"}, "commit"=>"Create Must"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 4054)
+
+
+  
+NoMethodError (undefined method `numericality' for #<Must id: nil, name: "evves", manufacturer: "eve", volume: 6, price: 666.0, created_at: nil, updated_at: nil>):
+  
+app/controllers/musts_controller.rb:27:in `block in create'
+app/controllers/musts_controller.rb:26:in `create'
+Started GET "/musts/new" for 192.168.4.152 at 2021-12-03 15:08:44 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 3.2ms | Allocations: 1103)
+  Rendered musts/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 5888)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 6392)
+
+
+Started GET "/musts" for 192.168.4.152 at 2021-12-03 15:08:46 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 5487)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms | Allocations: 5958)
+
+
+Started GET "/musts/new" for 192.168.4.135 at 2021-12-03 15:08:47 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 2.8ms | Allocations: 1027)
+  Rendered musts/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5545)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 6016)
+
+
+Started GET "/musts/1" for 192.168.4.152 at 2021-12-03 15:08:49 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 1.9ms | Allocations: 523)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [4 times] (Duration: 6.7ms | Allocations: 3384)
+  Rendered musts/show.html.erb within layouts/application (Duration: 18.3ms | Allocations: 7331)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 10889)
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 0.8ms | Allocations: 11915)
+
+
+Started GET "/musts" for 192.168.4.135 at 2021-12-03 15:08:54 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 5489)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.5ms | Allocations: 5960)
+
+
+Started GET "/musts/1" for 192.168.4.135 at 2021-12-03 15:08:59 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 1.2ms | Allocations: 510)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [4 times] (Duration: 6.3ms | Allocations: 3361)
+  Rendered musts/show.html.erb within layouts/application (Duration: 15.2ms | Allocations: 7257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 10817)
+Completed 200 OK in 25ms (Views: 21.7ms | ActiveRecord: 0.5ms | Allocations: 11835)
+
+
+Started POST "/musts/1/ratings" for 192.168.4.152 at 2021-12-03 15:09:06 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RatingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "rating"=>{"comment"=>"way too sweet", "rating"=>"1"}, "commit"=>"Create Rating", "must_id"=>"1"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ratings_controller.rb:29:in `set_must'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+  [1m[36mRating Create (0.5ms)[0m  [1m[32mINSERT INTO "ratings" ("must_id", "rating", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["must_id", 1], ["rating", 1], ["comment", "way too sweet"], ["created_at", "2021-12-03 14:09:06.352931"], ["updated_at", "2021-12-03 14:09:06.352931"], ["user_id", 6]]
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+Redirected to http://192.168.4.181:3000/musts/1
+Completed 302 Found in 11ms (ActiveRecord: 1.4ms | Allocations: 4892)
+
+
+Started GET "/musts/1" for 192.168.4.152 at 2021-12-03 15:09:06 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 0.9ms | Allocations: 584)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [5 times] (Duration: 6.9ms | Allocations: 4266)
+  Rendered musts/show.html.erb within layouts/application (Duration: 14.3ms | Allocations: 8310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 11997)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.5ms | Allocations: 13050)
+
+
+Started GET "/musts/1" for 192.168.4.31 at 2021-12-03 15:09:10 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 1.2ms | Allocations: 510)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [5 times] (Duration: 8.2ms | Allocations: 4376)
+  Rendered musts/show.html.erb within layouts/application (Duration: 18.1ms | Allocations: 8284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 11842)
+Completed 200 OK in 27ms (Views: 23.3ms | ActiveRecord: 0.8ms | Allocations: 12858)
+
+
+Started DELETE "/musts/1/ratings/26" for 192.168.4.152 at 2021-12-03 15:09:13 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RatingsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must_id"=>"1", "id"=>"26"}
+  [1m[36mMust Load (0.4ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ratings_controller.rb:29:in `set_must'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mRating Load (0.3ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/ratings_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ratings_controller.rb:18:in `destroy'
+  [1m[36mRating Destroy (0.5ms)[0m  [1m[31mDELETE FROM "ratings" WHERE "ratings"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/ratings_controller.rb:18:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ratings_controller.rb:18:in `destroy'
+Redirected to http://192.168.4.181:3000/musts/1
+Completed 302 Found in 17ms (ActiveRecord: 2.4ms | Allocations: 4593)
+
+
+Started GET "/musts/1" for 192.168.4.152 at 2021-12-03 15:09:13 +0100
+Cannot render console from 192.168.4.152! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 1.0ms | Allocations: 510)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [4 times] (Duration: 6.0ms | Allocations: 3361)
+  Rendered musts/show.html.erb within layouts/application (Duration: 13.7ms | Allocations: 7260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 10832)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.4ms | Allocations: 11854)
+
+
+Started POST "/musts/1/ratings" for 192.168.4.135 at 2021-12-03 15:09:16 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by RatingsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "rating"=>{"comment"=>"Smakar som gammal cola", "rating"=>"10"}, "commit"=>"Create Rating", "must_id"=>"1"}
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/ratings_controller.rb:29:in `set_must'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+  [1m[36mRating Create (0.6ms)[0m  [1m[32mINSERT INTO "ratings" ("must_id", "rating", "comment", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["must_id", 1], ["rating", 10], ["comment", "Smakar som gammal cola"], ["created_at", "2021-12-03 14:09:16.482862"], ["updated_at", "2021-12-03 14:09:16.482862"], ["user_id", 5]]
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/ratings_controller.rb:10:in `create'
+Redirected to http://192.168.4.181:3000/musts/1
+Completed 302 Found in 16ms (ActiveRecord: 2.2ms | Allocations: 4171)
+
+
+Started GET "/musts/1" for 192.168.4.135 at 2021-12-03 15:09:16 +0100
+Cannot render console from 192.168.4.135! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.1ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 0.9ms | Allocations: 510)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [5 times] (Duration: 7.1ms | Allocations: 4260)
+  Rendered musts/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 8170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 11739)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.5ms | Allocations: 12753)
+
+
+Started GET "/musts/1" for 192.168.4.31 at 2021-12-03 15:09:18 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMust Load (0.3ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/musts/show.html.erb:26
+  Rendered ratings/_new.html.erb (Duration: 1.4ms | Allocations: 510)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 1]]
+  ↳ app/views/musts/show.html.erb:41
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/ratings/_rating.html.erb:5
+  Rendered collection of ratings/_rating.html.erb [5 times] (Duration: 8.4ms | Allocations: 4377)
+  Rendered musts/show.html.erb within layouts/application (Duration: 19.3ms | Allocations: 8285)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 11847)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.8ms | Allocations: 12860)
+
+
+Started GET "/musts/new" for 127.0.0.1 at 2021-12-03 15:09:50 +0100
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 2.7ms | Allocations: 1041)
+  Rendered musts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 4824)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5297)
+
+
+Started POST "/musts" for 127.0.0.1 at 2021-12-03 15:09:56 +0100
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"aaa", "manufacturer"=>"aaaaa", "volume"=>"44", "price"=>"44"}, "commit"=>"Create Must"}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 3940)
+
+
+  
+NoMethodError (undefined method `numericality' for #<Must id: nil, name: "aaa", manufacturer: "aaaaa", volume: 44, price: 44.0, created_at: nil, updated_at: nil>):
+  
+app/controllers/musts_controller.rb:27:in `block in create'
+app/controllers/musts_controller.rb:26:in `create'
+Started GET "/" for 192.168.4.31 at 2021-12-03 15:11:55 +0100
+Cannot render console from 192.168.4.31! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5790)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.4ms | Allocations: 6352)
+
+
+Started POST "/musts" for 127.0.0.1 at 2021-12-03 15:16:46 +0100
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"aaa", "manufacturer"=>"aaaaa", "volume"=>"44", "price"=>"44"}, "commit"=>"Create Must"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/musts_controller.rb:24:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "musts" WHERE "musts"."name" = ? AND "musts"."volume" = ? AND "musts"."manufacturer" = ? LIMIT ?[0m  [["name", "aaa"], ["volume", 44], ["manufacturer", "aaaaa"], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Create (0.2ms)[0m  [1m[32mINSERT INTO "musts" ("name", "manufacturer", "volume", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["manufacturer", "aaaaa"], ["volume", 44], ["price", 44.0], ["created_at", "2021-12-03 14:16:46.915921"], ["updated_at", "2021-12-03 14:16:46.915921"]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+Redirected to http://0.0.0.0:3000/musts/4
+Completed 302 Found in 13ms (ActiveRecord: 1.2ms | Allocations: 11354)
+
+
+Started GET "/musts/4" for 127.0.0.1 at 2021-12-03 15:16:47 +0100
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 4]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.2ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 4]]
+  ↳ app/views/musts/show.html.erb:41
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 24)
+  Rendered musts/show.html.erb within layouts/application (Duration: 22.1ms | Allocations: 2806)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 6642)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.8ms | Allocations: 8126)
+
+
+Started GET "/musts/" for 127.0.0.1 at 2021-12-03 15:16:53 +0100
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.4ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4905)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms | Allocations: 5418)
+
+
+Started GET "/musts/new" for 127.0.0.1 at 2021-12-03 15:16:55 +0100
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 2.2ms | Allocations: 1148)
+  Rendered musts/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4906)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5382)
+
+
+Started POST "/musts" for 127.0.0.1 at 2021-12-03 15:17:03 +0100
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"a", "manufacturer"=>"a", "volume"=>"1", "price"=>"1"}, "commit"=>"Create Must"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "musts" WHERE "musts"."name" = ? AND "musts"."volume" = ? AND "musts"."manufacturer" = ? LIMIT ?[0m  [["name", "a"], ["volume", 1], ["manufacturer", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Create (0.7ms)[0m  [1m[32mINSERT INTO "musts" ("name", "manufacturer", "volume", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "a"], ["manufacturer", "a"], ["volume", 1], ["price", 1.0], ["created_at", "2021-12-03 14:17:03.192824"], ["updated_at", "2021-12-03 14:17:03.192824"]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+Redirected to http://0.0.0.0:3000/musts/5
+Completed 302 Found in 14ms (ActiveRecord: 2.0ms | Allocations: 3805)
+
+
+Started GET "/musts/5" for 127.0.0.1 at 2021-12-03 15:17:03 +0100
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 5]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 5]]
+  ↳ app/views/musts/show.html.erb:41
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 10)
+  Rendered musts/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1745)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5353)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 6379)
+
+
+Started GET "/musts/5" for 127.0.0.1 at 2021-12-03 15:20:14 +0100
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  [1m[36mMust Load (0.0ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 5]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.0ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 5]]
+  ↳ app/views/musts/show.html.erb:41
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 16)
+  Rendered musts/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 4259)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 8032)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.7ms | Allocations: 14970)
+
+
+Started GET "/musts" for 127.0.0.1 at 2021-12-03 15:20:19 +0100
+Processing by MustsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/index.html.erb within layouts/application
+  [1m[36mMust Load (0.5ms)[0m  [1m[34mSELECT "musts".* FROM "musts"[0m
+  ↳ app/views/musts/index.html.erb:18
+  Rendered musts/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1427)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5092)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.5ms | Allocations: 5624)
+
+
+Started GET "/musts/new" for 127.0.0.1 at 2021-12-03 15:20:20 +0100
+Processing by MustsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering musts/new.html.erb within layouts/application
+  Rendered musts/_form.html.erb (Duration: 2.6ms | Allocations: 1149)
+  Rendered musts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4907)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 5392)
+
+
+Started POST "/musts" for 127.0.0.1 at 2021-12-03 15:20:27 +0100
+Processing by MustsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "must"=>{"name"=>"a", "manufacturer"=>"a", "volume"=>"2222", "price"=>"2222"}, "commit"=>"Create Must"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "musts" WHERE "musts"."name" = ? AND "musts"."volume" = ? AND "musts"."manufacturer" = ? LIMIT ?[0m  [["name", "a"], ["volume", 2222], ["manufacturer", "a"], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mMust Create (0.9ms)[0m  [1m[32mINSERT INTO "musts" ("name", "manufacturer", "volume", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "a"], ["manufacturer", "a"], ["volume", 2222], ["price", 2222.0], ["created_at", "2021-12-03 14:20:27.653407"], ["updated_at", "2021-12-03 14:20:27.653407"]]
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/musts_controller.rb:27:in `block in create'
+Redirected to http://0.0.0.0:3000/musts/6
+Completed 302 Found in 17ms (ActiveRecord: 2.4ms | Allocations: 4260)
+
+
+Started GET "/musts/6" for 127.0.0.1 at 2021-12-03 15:20:27 +0100
+Processing by MustsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMust Load (0.2ms)[0m  [1m[34mSELECT "musts".* FROM "musts" WHERE "musts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/musts_controller.rb:62:in `set_must'
+  Rendering layout layouts/application.html.erb
+  Rendering musts/show.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT AVG("ratings"."rating") FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 6]]
+  ↳ app/models/must.rb:14:in `average_rating'
+  [1m[36mRating Load (0.1ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."must_id" = ?[0m  [["must_id", 6]]
+  ↳ app/views/musts/show.html.erb:41
+  Rendered collection of templates [0 times] (Duration: 0.0ms | Allocations: 10)
+  Rendered musts/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5354)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.5ms | Allocations: 6380)
+
+
