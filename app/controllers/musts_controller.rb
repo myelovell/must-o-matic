@@ -3,7 +3,7 @@ class MustsController < ApplicationController
 
   # GET /musts or /musts.json
   def index
-    @musts = Must.all
+    @musts = Must.all.sort_by{|m| m.average_rating}.reverse
   end
 
   # GET /musts/1 or /musts/1.json

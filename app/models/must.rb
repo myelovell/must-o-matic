@@ -11,7 +11,7 @@ class Must < ApplicationRecord
     end
 
     def average_rating 
-        ratings.average(:rating)
+        ratings.average(:rating).round(2)
     end
 
 end
